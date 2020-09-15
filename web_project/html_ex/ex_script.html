@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>이벤트 리스너 </title>
+        <!-- <script>
+            function over(obj){
+                obj.src="minions_title.jpg";
+            }
+            function out(obj){
+                obj.src="minions.jpg";
+            }
+        </script> -->
+        <script src="ex_jscript.js"></script>
+    </head>
+    
+    <body>
+        <h3>마우스를 올려요</h3>
+        <!-- <img src="minions.jpg" alt="image1"
+            onmouseover="this.src=c'"
+            onmouseout="this.src='minions.jpg'"> -->
+        <img src="minions.jpg" alt="image1"
+            onmouseover="over(this)"
+            onmouseout="out(this)" width=400;>
+        <hr>
+        <h3>눌러봐</h3>
+        <a href="javascript:alert('잘했다')">눌러봐</a>
+        <hr>
+        <script>
+            var x = 2; var y = 5;
+            document.write("2 + 5 = ",(2+5));
+            document.write("<br>");
+            document.write(x,"+",y,' = ',(x+y));
+            
+            function func(){
+                var x = 10;
+                document.write("<br>");
+                document.write(x);
+                document.write("<br>");
+                document.write(this.x);
+            }
+
+            func()
+        </script>    
+    </body>
+</html>

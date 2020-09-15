@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        무료급식소안내
+    </title>
+    <style>
+        html, body {margin: 0; padding: 0; height: 100%;}
+        .header{width: 100%; height: 20%;background:#32e0c4;}
+        .nav{width: 13%; height: 75%; float:left;background:#eeeeee;}
+        .nav a{color: #393e46; text-decoration:none;}
+        .section{width: 72%; height: 75%; float:left;background:#eeeeee;}
+        .aside{width: 15%; height: 75%; float:left;background:#eeeeee;}
+        .aside div {background:lightgray; font-size: 90%; padding-left:5px;}
+        .footer{width: 100%; height: 5%; clear:both;background:#393e46;}
+        
+        table {border:1px solid; border-collapse: collapse; width:95%;}
+        td, th {border: 1px solid;}
+        thead { background: #32e0c4;}
+        tbody tr:hover{background:#b5f1e7;}
+        #menubar {text-align: center; font-size: 120%;}
+        #menubar div {display :inline-block; width:32.5%; height:23px; padding:10px 0px;}
+        #menubar div a{color:#393e46; text-decoration:none;}
+        #menubar div a:hover{color:#222831; background:#63E7D1; padding:8px 100px;font-size:200;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <br>
+        <h1>&nbsp;&nbsp; 무료 급식소 안내</h1><br><br>
+        <div id="menubar">
+            <div><a href="#">급식소 안내</a></div>
+            <div><a href="minions.jpg">급식소 등록</a></div>
+            <div><a href="banana_song.mp4">급식소 관리</a></div>
+        </div>
+    </header>
+    <nav class="nav">
+        <h4><a href="#">&nbsp;&nbsp; 급식소 찾기</a></h4>
+        <h4><a href="#">&nbsp;&nbsp; 급식소 목록</a></h4>
+    </nav>
+    <section class="section">
+        <h2>무료 급식소 찾기</h2>
+        <article>
+            <h3>정보 입력</h3>
+            <form>
+                <label><input type="radio" name="srch_addr" value="1">현재 위치</label>
+                <label><input type="radio" name="srch_addr" value="2" checked>희망 지역
+                <select name="도">
+                    <option value="1" selected>시/도</option>
+                    <option value="2">서울특별시</option>
+                    <option value="3">경기도</option>
+                    <option value="4">강원도</option>
+                </select>
+                <select name="시/군">
+                    <option value="1" selected>시/구</option>
+                    <option value="2">강북구</option>
+                    <option value="3" >강서구</option>
+                    <option value="4">영등포구</option>
+                </select>
+                <select name="동">
+                    <option value="1" selected >동</option>
+                    <option value="2">가리봉동</option>
+                    <option value="3" >목동</option>
+                    <option value="4">aa동</option>
+                </select>
+                </label><br><br>
+            <label><input type="radio" name="srch_time" value="1">현재 시간</label>
+            <label><input type="radio" name="srch_time" value="2" checked>희망 시간
+                <input type="date" value="2020-07-02"> <!--#TODO 현재날짜 출력-->
+                <input type="time" value="12:00"> <!--#TODO 현재시간 출력-->
+            </label><br><br>
+            <label>주민등록번호 : <input type="text" value="">-
+                <input type="text" value=""></label>
+            <input type="submit" value="검색">
+            </form>
+        </article>
+        <br><hr>
+        <article>
+            <h3>이용 가능 급식소</h3>
+            <table border="1">
+                <thead>
+                    <tr><th>업체</th><th>급식 장소</th><th>급식 요일</th>
+                        <th>급식 시간</th><th>급식 대상</th><th>시설 연락처</th></tr>
+                </thead>
+                <tbody align="center">
+                    <tr><td>노인정</td><td>서울특별시 강서구 00동 111-11</td><td>월~토</td>
+                        <td>11:30 ~ 14:00</td><td>60세이상 기초수급자</td><td>02-0000-0000</td></tr>
+                    <tr><td>센터</td><td>서울특별시 강서구 00동 111-11</td><td>월~금</td>
+                        <td>11:30 ~ 13:30</td><td>60세이상 노인</td><td>02-0100-1111</td></tr>
+                    <tr><td>노인정</td><td>서울특별시 강서구 00동 111-11</td><td>월~토</td>
+                        <td>11:30 ~ 14:00</td><td>60세이상 기초수급자</td><td>02-0000-0000</td></tr>
+                    <tr><td>센터</td><td>서울특별시 강서구 00동 111-11</td><td>월~금</td>
+                        <td>11:30 ~ 13:30</td><td>60세이상 노인</td><td>02-0100-1111</td></tr>
+                    <tr><td>노인정</td><td>서울특별시 강서구 00동 111-11</td><td>월~토</td>
+                        <td>11:30 ~ 14:00</td><td>60세이상 기초수급자</td><td>02-0000-0000</td></tr>
+                    <tr><td>센터</td><td>서울특별시 강서구 00동 111-11</td><td>월~금</td>
+                        <td>11:30 ~ 13:30</td><td>60세이상 노인</td><td>02-0100-1111</td></tr>    
+                </tbody>
+            </table>
+        </article>
+    </section>
+    <aside class="aside">
+        <h4>무료급식제공 식당</h4>
+        <div>
+            <strong>&nbsp;동행식당</strong>
+            <li>60세이상노인</li>
+            <li>7월 10일</li>
+            <li>11:30~14:00</li>
+            <li>서울특별시 영등포구 대림동 22-22</li>   
+        </div>
+        <br>
+        <div>
+            <strong>&nbsp;동행식당</strong>
+            <li>60세이상노인</li>
+            <li>7월 10일</li>
+            <li>11:30~14:00</li>
+            <li>서울특별시 영등포구 대림동 22-22</li>
+            </div>
+        <br>
+        <div>
+            <strong>&nbsp;동행식당</strong>
+            <li>60세이상노인</li>
+            <li>7월 10일</li>
+            <li>11:30~14:00</li>
+            <li>서울특별시 영등포구 대림동 22-22</li>
+            </div>
+        <br>
+        
+    </aside>
+    <footer class="footer">2020 이미지 분석 기반의 인공지능 플랫폼 개발자 양성과정 True Love Team</footer>
+</body>
+</html>

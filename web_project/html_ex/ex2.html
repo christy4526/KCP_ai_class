@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>인터넷이란</title>
+        <style>
+            div{
+                display: inline-block;
+                position: absolute;
+                border: 1px solid lightblue; 
+            }
+            div > p {
+                display: inline-block;
+                position: absolute;
+                height: 20px;
+                width: 50px;
+                background: rgb(113, 202, 91);
+                text-align: center;
+            } 
+            #fixed{
+                position: fixed; bottom: 10px; right: 10px; width: 100px;
+                padding: 5px; background:rgb(255,252,247); color:rgb(247,242,14);
+                text-align: center;
+            }
+            p{
+                width: 20em; height: 4em; border: 1px solid rgb(113, 202, 91);
+            }
+            .hidden { overflow: hidden;}
+            .visible { overflow: visible;}
+            .scroll {overflow: scroll;}
+            @keyframes bomb{
+                from{font-size:100%;}
+                to{font-size: 500%;}
+            } 
+            h1 {
+                animation-name: bomb;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>minions</h1>
+        
+        <p class="hidden">발명가인 남편 허브와 함께 세상을 지배하려고 하는 악당 스칼렛 오버킬에게 
+            미니언인 스튜어트, 케빈, 밥이 합세하면서 벌어지는 이야기.</p><br>
+        <p class="visible">발명가인 남편 허브와 함께 세상을 지배하려고 하는 악당 스칼렛 오버킬에게 
+            미니언인 스튜어트, 케빈, 밥이 합세하면서 벌어지는 이야기.</p><br>
+        <p class="scroll">발명가인 남편 허브와 함께 세상을 지배하려고 하는 악당 스칼렛 오버킬에게
+             미니언인 스튜어트, 케빈, 밥이 합세하면서 벌어지는 이야기.</p><br>
+        <div>
+            <img src="minions.jpg" width="400">
+            <p style="left:110px; top: 35px;">Bob</p>
+            <p style="left:175px; top: 15px;">Kevin</p>
+            <p style="left:250px; top: 18px;">Stuart</p>
+        </div>
+        <div id="fixed">Minions Banana</div>
+        </body>
+</html>
