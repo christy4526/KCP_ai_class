@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    .jumbotron {
+        background-color: #fff;
+        color: #FF8A3D;
+        padding: 20px 25px;
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      /* background-color: #f1f1f1; */
+      height: 100%;
+    }
+    
+    a {
+      color : black;
+      text-decoration: none;
+    }
+    a:hover {
+      color: black;
+      text-decoration: none;
+    }
+
+    .fontbord{
+      font-weight : bold;
+      font-size: large;
+      display : inline;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #FF8A3D;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<div class="jumbotron text-center">
+    <!-- <h1>근당마켓</h1> -->
+    <img src="근당로고_s.png" alt="로고로고" width="300px" margin="20px" onclick="window.location='index.html';"> 
+    <br>
+    <!-- <p>We specialize in blablabla</p> -->
+    <form class="form-inline" style="padding:20px">
+      <div class="input-group">
+        <input type="text" class="form-control" size="50" placeholder="지역, 상품 등을 검색해보세요" required>
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-danger" style="background-color: #FF8A3D" onclick="window.location='search_result.html';">검색</button>
+        </div>
+      </div>
+    </form>
+</div>
+<hr>
+  
+<div class="container-fluid">    
+  <div class="row ">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+        <div class="container-fluid bg-3 ">  
+          <h2 style="text-align: center;">인기 매물</h2>
+          <div class ="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default" onclick="window.location='post.html';">
+                <div class="panel-heading">
+                  <img src="image/전자레인지1.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">SK매직 20L 전자렌지 MWO-18M1</p>
+                  <p>서울 종로구 종로3가</p>
+                  <p class="fontbord" style="color:#FF8A3D">20,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 4 · 채팅 5
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img src="image/자전거1.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">미니벨로 스나이퍼F</p>
+                  <p> 서울 마포구 ㅇㅇ동</p>
+                  <p class="fontbord" style="color:#FF8A3D">60,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 24 · 채팅 7
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img src="image/제습기1.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">마모스 제습기</p>
+                  <p>경기도 용인시 수지구</p>
+                  <p class="fontbord" style="color:#FF8A3D">15,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 15 · 채팅 3
+                </div>
+              </div>
+            </div>
+          </div><br><div class ="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default" onclick="window.location='post.html';">
+                <div class="panel-heading">
+                  <img src="image/냉장고.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">157L 냉장고</p>
+                  <p>경기도 파주시 00동</p>
+                  <p class="fontbord" style="color:#FF8A3D">30,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 5 · 채팅 2
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img src="image/텐트.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">원터치 텐트</p>
+                  <p> 경기도 화성시 ㅇㅇ동</p>
+                  <p class="fontbord" style="color:#FF8A3D">15,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 30 · 채팅 7
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img src="image/의자.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">의자</p>
+                  <p>경기도 용인시 수지구</p>
+                  <p class="fontbord" style="color:#FF8A3D">5,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 18 · 채팅 2
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class ="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img src="image/냉장고.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">냉장고</p>
+                  <p>경기도 파주시 ㅇㅇ동</p>
+                  <p class="fontbord" style="color:#FF8A3D">30,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 2 · 채팅 5
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img src="image/자전거1.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">미니벨로 스나이퍼F</p>
+                  <p> 서울 마포구</p>
+                  <p class="fontbord" style="color:#FF8A3D">60,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 24 · 채팅 7
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img src="image/제습기1.png" class="img-responsive" style="width:100%; height: 230px;" alt="Image">
+                </div>
+                <div class="panel-body">
+                  <p class="fontbord">마모스 제습기</p>
+                  <p>경기도 용인시 수지구</p>
+                  <p class="fontbord" style="color:#FF8A3D">15,000</p>
+                </div>
+                <div class="panel-footer">
+                  관심 15 · 채팅 3
+                </div>
+              </div>
+            </div>
+          </div><br>
+    </div>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <p> <h3 class="fontbord">오늘의 인기 검색어</h3></p>
+      <hr>
+      <!-- <ol type="1">
+        <li><a href="search_result.html">자전거</a></li>
+        <li><a href="#">캠핑</a></li>
+        <li><a href="#">의자</a></li>
+        <li><a href="#">냉장고</a></li>
+        <li><a href="#">텐트</a></li>
+        <li><a href="#">노트북</a></li>
+        <li><a href="#">이어폰</a></li>
+      </ol> -->
+      <p><a href="search_result.html">&nbsp 1. 자전거</a></p>
+      <p><a href="#">&nbsp 2. 캠핑</a></p>
+      <p><a href="#">&nbsp 3. 의자</a></p>
+      <p><a href="#">&nbsp 4. 냉장고</a></p>
+      <p><a href="#">&nbsp 5. 텐트</a></p>
+      <p><a href="#">&nbsp 6. 노트북</a></p>
+      <p><a href="#">&nbsp 7. 아이폰</a></p>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>

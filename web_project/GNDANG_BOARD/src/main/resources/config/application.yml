@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console: #브라우저에서 바로 console로 접근 가능
+      enabled: true
+      path: /danggn_db #브라우저에서 들어갈 링크
+      settings:
+        web-allow-others: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    jdbc-url: jdbc:h2:file:./h2/danggn_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE #저장 할 경로 설정
+    username: test
+    password: 1234
+
+#depth는 무조건 space 두번
