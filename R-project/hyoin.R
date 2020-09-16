@@ -76,3 +76,4 @@ fig <- fig %>% add_annotations(xref = 'x', yref = 'inderstry',
                                showarrow = FALSE) 
 
 fig
+
