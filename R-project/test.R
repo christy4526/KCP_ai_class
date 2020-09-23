@@ -22,3 +22,4 @@ bartlett.test(datas2$엥겔지수, datas2$취업인원수, data=datas2)
 #ANOVA
 datas.lm <- lm(datas2$엥겔지수 ~ datas2$취업인원수)
 anova(datas.lm)
+
